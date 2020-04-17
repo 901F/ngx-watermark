@@ -1,0 +1,26 @@
+{
+    "name": "ngx-watermark",
+    "version": "0.0.1",
+    "description": "Display watermark on html element with multiple line",
+    "peerDependencies": {
+        "@angular/common": "<10.0.0",
+        "@angular/core": "<10.0.0"
+    },
+    "keywords": [
+        "angular",
+        "angular2",
+        "watermark",
+        "watermark-text",
+        "javascript"
+    ],
+    "author": "Suriyapong Thinsuk <thinsuk.s@gmail.com>",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com:MADCAZ/ngx-watermark.git"
+    },
+    "bugs": {
+        "url": "https://github.com/MADCAZ/ngx-watermark/issues"
+    },
+    "homepage": "https://github.com/MADCAZ/ngx-watermark#readme"
+}
