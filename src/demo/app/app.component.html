@@ -1,0 +1,66 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm">
+    <a class="navbar-brand" href="#">
+        <img height="32px" src="https://angular.io/assets/images/logos/angular/angular.svg" width="32px">
+        ngx-watermark@{{version}}
+    </a>
+
+    <ul class="nav navbar-nav mr-auto"></ul>
+    <ul class="nav navbar-nav">
+        <li class="nav-item align-items-center">
+            <a href="https://github.com/MADCAZ/ngx-watermark/">
+                <img alt="GitHub Stars"
+                    src="https://img.shields.io/github/stars/MADCAZ/ngx-watermark?label=Github&style=social" />
+            </a>
+        </li>
+    </ul>
+
+</nav>
+
+<main role="main" class="container mt-3">
+
+    <section class="jumbotron text-center" [ngxWatermark]="options">
+        <div class="container">
+            <h1>NGX-WATERMARK</h1>
+            <p class="lead text-muted">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean viverra maximus venenatis. Cras lorem
+                nulla, malesuada ac lobortis ut, tincidunt a ipsum. Sed varius, dui at efficitur cursus, massa leo
+                condimentum nisl, id bibendum leo magna ut erat. Vestibulum eu blandit enim. Pellentesque eros quam,
+                finibus quis tincidunt quis, porttitor vel magna. Aenean quis lobortis purus. Ut aliquam velit et magna
+                pulvinar, sit amet sollicitudin ipsum dapibus. Nam ut tellus eu lorem ultricies feugiat. Fusce leo eros,
+                ullamcorper et mattis ac, dignissim at quam. Donec blandit blandit turpis. Vivamus scelerisque erat
+                pharetra nisi suscipit ultrices. Nam sed lorem at leo vehicula eleifend in eget elit. Quisque varius
+                diam erat, eu faucibus diam varius vitae.
+            </p>
+            <p>
+                <a href="#" class="btn btn-primary mr-2 my-2">Submit</a>
+                <a href="#" class="btn btn-secondary my-2">Cancel</a>
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <div class="card">
+            <div class="card-header">
+                Customize
+            </div>
+            <div class="card-body">
+                <form class="row">
+                    <div class="form-group col">
+                        <label for="text">Text</label>
+                        <textarea class="form-control" id="text" rows="3" [(ngModel)]="optionsText" [ngModelOptions]="{standalone: true}" (change)="optionsTextChange()"></textarea>
+                    </div>
+                    <div class="form-group col">
+                        <label for="font">Font-Family</label>
+                        <select class="form-control" id="font" [(ngModel)]="optionsFont" [ngModelOptions]="{standalone: true}" (change)="optionFontChange()">
+                            <option value="Arial">Arial</option>
+                            <option value="Georgia">Georgia</option>
+                            <option value="Courier New">Courier New</option>
+                            <option value="Kanit">Kanit (Custom Web Font)</option>
+                          </select>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</main>

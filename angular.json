@@ -92,6 +92,7 @@
               "src/demo/assets"
             ],
             "styles": [
+              "src/demo/assets/fonts/fonts.css",
               "src/demo/styles.scss"
             ],
             "scripts": []

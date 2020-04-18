@@ -1,12 +1,10 @@
 import { NgModule } from '@angular/core';
-import { NgxWatermarkComponent } from './ngx-watermark.component';
-
-
+import { NgxWatermarkDirective } from './ngx-watermark.directive';
 
 @NgModule({
-  declarations: [NgxWatermarkComponent],
-  imports: [
-  ],
-  exports: [NgxWatermarkComponent]
+    declarations: [NgxWatermarkDirective],
+    imports: [
+    ],
+    exports: [NgxWatermarkDirective]
 })
 export class NgxWatermarkModule { }
