@@ -1,27 +1,68 @@
-# NgxWatermark
+<h1 align="center">ngx-watermark</h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
+<p align="center">
+Simple watermark with multiple line of text for <a href="https://angular.io/">Angular</a>
+</p>
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+<p align="center">
+<a href="https://www.npmjs.com/package/ngx-watermark"><img src="https://img.shields.io/badge/dynamic/json?color=brightgreen&label=npm%20package&query=version&url=https%3A%2F%2Fraw.githubusercontent.com%2Fmadcaz%2Fngx-watermark%2Fdevelopment%2Fpackage.json&style=for-the-badge"></a>
+<a href="https://github.com/MADCAZ/ngx-watermark/blob/development/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/MADCAZ/ngx-watermark?color=%23f86a08&style=for-the-badge"></a>
+</p>
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Table of contents
+- [Table of contents](#table-of-contents)
+- [Features](#features)
+- [Installation instructions](#installation-instructions)
+- [Demo](#demo)
+- [API](#api)
 
-## Build
+## Features
+- [x] Watermark Text Multiple Line
+- [x] Customize font-family with Web Safe Font
+- [x] Allow to use your own web fonts
+- [x] Load web fonts via `fontfaceobserver` lib
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+## Installation instructions
+Install `ngx-watermark` from `npm`:
+```bash
+npm install ngx-watermark --save
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Add needed package to NgModule imports:
+```
+import { NgxWatermarkModule } from 'ngx-watermark';
 
-## Running end-to-end tests
+@NgModule({
+  ...
+  imports: [NgxWatermarkModule,...]
+  ...
+})
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Add `ngxWatermark` to your HTML element:
+```
+<section class="jumbotron" [ngxWatermark]="options">
+    ...
+</section>
+```
+## Demo
+[demo project](https://madcaz.github.io/ngx-watermark/)
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Options
+ Option  | Type | Default | Required | Description |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| text | string  | `ngx-watermark` | no | Your text for create watermark. Seperate line with `\n` |
+| width | number  | `300` | no | Set width for watermark. |
+| height | number  | `100` | no | Set height for watermark. |
+| fontFamily | string  | `Arial` | no | Set font-family for text. Can set your custom web fonts. |
+| fontSize | string  | `18px` | no | Set font size for text. |
+| fontWeight | 'normal' or 'bold' or 'bolder' or 'lighter' or 100 or 200 or 300 or 400 or 500 or 600 or 700 or 800 or 900  | `normal` | no | Set font weight for text. |
+| color | string | `#999999` | no | Set font color for text by HEX color. |
+| alpha | number | `0.5` | no | Set opacity for watermark. |
+| degree | number | `-45` | no | Set degree for watermark. |
+| lineHeight | number | `24` | no | Set line height for text. |
+| textAlign | 'start' or 'end' or 'center' or 'left' or 'right' | `center` | no | Set text align for text. |
+| textBaseline | 'alphabetic' or 'top' or 'hanging' or 'middle' or 'ideographic' or 'bottom' | `middle` | no | Set text base line for text. |
