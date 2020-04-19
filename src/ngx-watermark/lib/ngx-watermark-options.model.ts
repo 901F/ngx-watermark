@@ -11,4 +11,6 @@ export interface NgxWatermarkOptions {
     lineHeight?: number;
     textAlign?: 'start' | 'end' | 'center' | 'left' | 'right';
     textBaseline?: 'alphabetic' | 'top' | 'hanging' | 'middle' | 'ideographic' | 'bottom';
+    backgroundRepeat?: 'repeat' | 'repeat-x' | 'repeat-y' | 'no-repeat' | 'space' | 'round' | 'initial';
+    backgroundPosition?: string;
 }

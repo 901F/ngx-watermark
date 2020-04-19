@@ -21,7 +21,9 @@ export class WatermarkHandler {
         degree: -45,
         lineHeight: 24,
         textAlign: 'center',
-        textBaseline: 'middle'
+        textBaseline: 'middle',
+        backgroundRepeat: 'repeat',
+        backgroundPosition: '0% 0%',
     };
 
     readonly WEB_SAFE_FONT: string[] = [
@@ -38,18 +40,23 @@ export class WatermarkHandler {
     generateWatermark(_ops: NgxWatermarkOptions) {
 
         let options: NgxWatermarkOptions = Object.assign({}, this.DEFAULT_OPTIONS, _ops);
-
         if (this.isWebSafeFont(options.fontFamily)) {
-            this._renderer.setStyle(this._el.nativeElement, 'background-image', `url(${this.createDataUrl(options)})`);
+            this.processStyleFromOptions(options);
         } else {
             let font = new FontFaceObserver(options.fontFamily);
             font.load().then(() => {
-                this._renderer.setStyle(this._el.nativeElement, 'background-image', `url(${this.createDataUrl(options)})`);
+                this.processStyleFromOptions(options);
             }).catch(() => {
                 options = Object.assign({}, options, { fontFamily: this.DEFAULT_FONT_FAMILY });
-                this._renderer.setStyle(this._el.nativeElement, 'background-image', `url(${this.createDataUrl(options)})`);
+                this.processStyleFromOptions(options);
             });
         }
+    }
+
+    private processStyleFromOptions(_ops: NgxWatermarkOptions) {
+        this.setHTMLElementStyle(['background-image', `url(${this.createDataUrl(_ops)})`]);
+        this.setHTMLElementStyle(['background-repeat', _ops.backgroundRepeat]);
+        this.setHTMLElementStyle(['background-position', _ops.backgroundPosition]);
     }
 
     private isWebSafeFont(_font: string): boolean {
@@ -92,5 +99,9 @@ export class WatermarkHandler {
             _ctx.fillText(line, x, y);
             y += _lineHeight;
         }
+    }
+
+    private setHTMLElementStyle([name, value]: [string, string | number]) {
+        this._renderer.setStyle(this._el.nativeElement, name, value);
     }
 }
