@@ -38,25 +38,34 @@
         </div>
     </section>
 
-    <section>
+    <section class="mb-5">
         <div class="card">
-            <div class="card-header">
+            <div class="card-header bg-secondary text-white">
+                <i class="fa fa-cog" aria-hidden="true"></i>
                 Customize
             </div>
             <div class="card-body">
-                <form class="row">
-                    <div class="form-group col">
-                        <label for="text">Text</label>
-                        <textarea class="form-control" id="text" rows="3" [(ngModel)]="optionsText" [ngModelOptions]="{standalone: true}" (change)="optionsTextChange()"></textarea>
+                <form>
+                    <div class="row">
+                        <div class="form-group col">
+                            <label for="text">Text</label>
+                            <textarea class="form-control" id="text" rows="3" [(ngModel)]="optionsText" [ngModelOptions]="{standalone: true}" (change)="optionsTextChange()"></textarea>
+                        </div>
                     </div>
-                    <div class="form-group col">
-                        <label for="font">Font-Family</label>
-                        <select class="form-control" id="font" [(ngModel)]="optionsFont" [ngModelOptions]="{standalone: true}" (change)="optionFontChange()">
-                            <option value="Arial">Arial</option>
-                            <option value="Georgia">Georgia</option>
-                            <option value="Courier New">Courier New</option>
-                            <option value="Kanit">Kanit (Custom Web Font)</option>
-                          </select>
+                    <div class="row">
+                        <div class="form-group col">
+                            <label for="font">Font-Family</label>
+                            <select class="form-control" id="font" [(ngModel)]="optionsFont" [ngModelOptions]="{standalone: true}" (change)="optionFontChange()">
+                                <option value="Arial">Arial</option>
+                                <option value="Georgia">Georgia</option>
+                                <option value="Courier New">Courier New</option>
+                                <option value="Kanit">Kanit (Custom Web Font)</option>
+                              </select>
+                        </div>
+                        <div class="form-group col">
+                            <label for="font">Color</label>
+                            <color-twitter triangle="hide" [color]="options.color" width="350px" (onChange)="colorSelect($event)"></color-twitter>
+                        </div>
                     </div>
                 </form>
             </div>

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NgxWatermarkOptions } from 'ngx-watermark';
 import { environment } from '../environments/environment';
+import { ColorEvent } from 'ngx-color';
 
 @Component({
     selector: 'app-root',
@@ -29,5 +30,9 @@ export class AppComponent {
 
     optionFontChange() {
         this.options = Object.assign({}, this.options, { fontFamily: this.optionsFont});
+    }
+
+    colorSelect(_c: ColorEvent) {
+        this.options = Object.assign({}, this.options, { color: _c.color.hex })
     }
 }
