@@ -28,7 +28,7 @@ Simple watermark with multiple line of text for <a href="https://angular.io/">An
 ## Installation instructions
 Install `ngx-watermark` from `npm`:
 ```bash
-npm install ngx-watermark --save
+npm install ngx-watermark fontfaceobserver --save
 ```
 
 Add needed package to NgModule imports:
