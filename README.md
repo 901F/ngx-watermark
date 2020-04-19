@@ -66,3 +66,6 @@ Add `ngxWatermark` to your HTML element:
 | lineHeight | number | `24` | no | Set line height for text. |
 | textAlign | 'start' or 'end' or 'center' or 'left' or 'right' | `center` | no | Set text align for text. |
 | textBaseline | 'alphabetic' or 'top' or 'hanging' or 'middle' or 'ideographic' or 'bottom' | `middle` | no | Set text base line for text. |
+| textAlign | 'start' or 'end' or 'center' or 'left' or 'right' | `center` | no | Set text align for text. |
+| backgroundRepeat | 'repeat' or 'repeat-x' or 'repeat-y' or 'no-repeat' or 'space' or 'round' or 'initial' | `repeat` | no | Set background-repeat style for watermark. |
+| backgroundPosition | string | `0% 0%` | no | Set background-position style for watermark. standard on [MDN Web docs](https://developer.mozilla.org/en-US/docs/Web/CSS/background-position) |
