@@ -9,7 +9,7 @@ import { ColorEvent } from 'ngx-color';
     styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-    
+
     version: string = environment.version;
 
     options: NgxWatermarkOptions = {
@@ -24,13 +24,15 @@ export class AppComponent {
     optionsText: string = this.options.text;
     optionsFont: string = this.options.fontFamily;
     optionsAlpha: number = this.options.alpha;
+    optionsWidth: number = this.options.width;
+    optionsHeight: number = this.options.height;
 
     optionsTextChange() {
-        this.updateOptions({ text: this.optionsText});
+        this.updateOptions({ text: this.optionsText });
     }
 
     optionsFontChange() {
-        this.updateOptions({ fontFamily: this.optionsFont});
+        this.updateOptions({ fontFamily: this.optionsFont });
     }
 
     colorSelect(_c: ColorEvent) {
@@ -38,7 +40,15 @@ export class AppComponent {
     }
 
     optionsAlphaChange() {
-        this.updateOptions({alpha: this.optionsAlpha});
+        this.updateOptions({ alpha: this.optionsAlpha });
+    }
+
+    optionsWidthChange() {
+        this.updateOptions({ width: this.optionsWidth });
+    }
+
+    optionsHeightChange() {
+        this.updateOptions({ height: this.optionsHeight });
     }
 
     private updateOptions(_obj: any) {
