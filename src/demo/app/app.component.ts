@@ -21,18 +21,27 @@ export class AppComponent {
         alpha: 0.7
     };
 
-    optionsText = this.options.text;
-    optionsFont = this.options.fontFamily;
+    optionsText: string = this.options.text;
+    optionsFont: string = this.options.fontFamily;
+    optionsAlpha: number = this.options.alpha;
 
     optionsTextChange() {
-        this.options = Object.assign({}, this.options, { text: this.optionsText});
+        this.updateOptions({ text: this.optionsText});
     }
 
-    optionFontChange() {
-        this.options = Object.assign({}, this.options, { fontFamily: this.optionsFont});
+    optionsFontChange() {
+        this.updateOptions({ fontFamily: this.optionsFont});
     }
 
     colorSelect(_c: ColorEvent) {
-        this.options = Object.assign({}, this.options, { color: _c.color.hex })
+        this.updateOptions({ color: _c.color.hex });
+    }
+
+    optionsAlphaChange() {
+        this.updateOptions({alpha: this.optionsAlpha});
+    }
+
+    private updateOptions(_obj: any) {
+        this.options = Object.assign({}, this.options, _obj);
     }
 }

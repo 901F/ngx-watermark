@@ -5,6 +5,9 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { NgxWatermarkModule } from 'ngx-watermark';
 import { ColorTwitterModule } from 'ngx-color/twitter';
+import { NgxSliderModule } from '@m0t0r/ngx-slider';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -12,9 +15,11 @@ import { ColorTwitterModule } from 'ngx-color/twitter';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     FormsModule,
     NgxWatermarkModule,
     ColorTwitterModule,
+    NgxSliderModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
