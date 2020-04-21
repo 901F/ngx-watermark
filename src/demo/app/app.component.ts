@@ -18,7 +18,8 @@ export class AppComponent {
         height: 300,
         fontFamily: 'Kanit',
         color: '#999',
-        alpha: 0.7
+        alpha: 0.7,
+        degree: -45
     };
 
     optionsText: string = this.options.text;
@@ -26,6 +27,7 @@ export class AppComponent {
     optionsAlpha: number = this.options.alpha;
     optionsWidth: number = this.options.width;
     optionsHeight: number = this.options.height;
+    optionsDegree: number = this.options.degree;
 
     optionsTextChange() {
         this.updateOptions({ text: this.optionsText });
@@ -49,6 +51,10 @@ export class AppComponent {
 
     optionsHeightChange() {
         this.updateOptions({ height: this.optionsHeight });
+    }
+
+    optionsDegreeChange() {
+        this.updateOptions({ degree: this.optionsDegree});
     }
 
     private updateOptions(_obj: any) {
