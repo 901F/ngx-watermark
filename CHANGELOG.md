@@ -1,3 +1,12 @@
+## [1.0.1](https://github.com/MADCAZ/ngx-watermark/compare/1.0.0...1.0.1) (2020-05-05)
+
+
+### Bug Fixes
+
+* **build:** can't build-optimizer on old version ([38097fe](https://github.com/MADCAZ/ngx-watermark/commit/38097fe3651970a196ae941efb19d12fd3436971))
+
+
+
 # [1.0.0](https://github.com/MADCAZ/ngx-watermark/compare/1.0.0-rc0...1.0.0) (2020-04-20)
 
 
