@@ -25,7 +25,8 @@
             "ngx-watermark/*": [
                 "dist/ngx-watermark/*"
             ]
-        }
+        },
+        "emitDecoratorMetadata": true
     },
     "angularCompilerOptions": {
         "enableIvy": false,
