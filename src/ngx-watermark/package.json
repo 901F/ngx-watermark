@@ -23,5 +23,8 @@
     "bugs": {
         "url": "https://github.com/MADCAZ/ngx-watermark/issues"
     },
+    "dependencies": {
+      "tslib": "^2.0.0"
+    },
     "homepage": "https://github.com/MADCAZ/ngx-watermark#readme"
 }
