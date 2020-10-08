@@ -13,10 +13,20 @@ Simple watermark with multiple line of text for <a href="https://angular.io/">An
 
 ## Table of contents
 - [Table of contents](#table-of-contents)
+- [Versions](#versions)
 - [Features](#features)
 - [Installation instructions](#installation-instructions)
 - [Demo](#demo)
-- [API](#api)
+- [Options](#options)
+
+## Versions
+
+| Angular| ngx-number-format|
+| ------|:------:| 
+| >=10.0.0 <11.0.0 | v2.x |
+| >=6.0.0 <10.0.0  | v1.x |
+
+---
 
 ## Features
 - [x] Watermark Text Multiple Line
