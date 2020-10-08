@@ -3,8 +3,8 @@
     "version": "1.0.1",
     "description": "Display watermark on html element with multiple line",
     "peerDependencies": {
-        "@angular/common": "<10.0.0",
-        "@angular/core": "<10.0.0",
+        "@angular/common": ">=10.0.0 <11.0.0",
+        "@angular/core": ">=10.0.0 <11.0.0",
         "fontfaceobserver": "^2.1.0"
     },
     "keywords": [
