@@ -1,3 +1,12 @@
+# [11.0.0](https://github.com/MADCAZ/ngx-watermark/compare/2.0.0...11.0.0) (2021-02-17)
+
+
+### Features
+
+* **core:** support Angular 11 ([a1d9a5c](https://github.com/MADCAZ/ngx-watermark/commit/a1d9a5c1415ad7676b2a99b1c49f099b0a748706))
+
+
+
 # [2.0.0](https://github.com/MADCAZ/ngx-watermark/compare/1.0.1...2.0.0) (2020-10-08)
 
 

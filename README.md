@@ -23,6 +23,7 @@ Simple watermark with multiple line of text for <a href="https://angular.io/">An
 
 | Angular| ngx-watermark|
 | ------|:------:| 
+| >=11.0.0 <12.0.0 | v11.x |
 | >=10.0.0 <11.0.0 | v2.x |
 | >=6.0.0 <10.0.0  | v1.x |
 

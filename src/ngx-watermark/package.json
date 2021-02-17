@@ -1,6 +1,6 @@
 {
     "name": "ngx-watermark",
-    "version": "2.0.0",
+    "version": "11.0.0",
     "description": "Display watermark on html element with multiple line",
     "peerDependencies": {
         "@angular/common": ">=11.0.0 <12.0.0",
