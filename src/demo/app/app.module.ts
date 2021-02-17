@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { NgxWatermarkModule } from 'ngx-watermark';
 import { ColorTwitterModule } from 'ngx-color/twitter';
-import { NgxSliderModule } from '@m0t0r/ngx-slider';
+import { NgxSliderModule } from '@angular-slider/ngx-slider';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
