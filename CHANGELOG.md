@@ -1,3 +1,13 @@
+# [13.0.0](https://github.com/MADCAZ/ngx-watermark/compare/12.0.0...13.0.0) (2021-11-10)
+
+
+### Features
+
+* **core:** enable ivy in this project ([171ad5a](https://github.com/MADCAZ/ngx-watermark/commit/171ad5a4e3a49302256f6370acef71a7210d8479))
+* **core:** support Angular 13 ([03b3588](https://github.com/MADCAZ/ngx-watermark/commit/03b358817b01811ea37147a97aff8ad970b459e1))
+
+
+
 # [12.0.0](https://github.com/MADCAZ/ngx-watermark/compare/11.0.0...12.0.0) (2021-06-22)
 
 
