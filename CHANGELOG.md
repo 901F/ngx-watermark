@@ -1,3 +1,9 @@
+## [13.0.1](https://github.com/MADCAZ/ngx-watermark/compare/13.0.0...13.0.1) (2021-11-18)
+### Bugs
+
+* **core:** Fix peerDependencies to fit >=13.0.0 <14.0.0 ([9fc0fb](https://github.com/MADCAZ/ngx-watermark/commit/e9fc0fb4a9d771155bf3220a131646688751f465))
+
+
 # [13.0.0](https://github.com/MADCAZ/ngx-watermark/compare/12.0.0...13.0.0) (2021-11-10)
 
 
