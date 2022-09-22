@@ -23,6 +23,7 @@ Simple watermark with multiple line of text for <a href="https://angular.io/">An
 
 | Angular| ngx-watermark|
 | ------|:------:| 
+| >=14.0.0 <15.0.0 | v14.x |
 | >=13.0.0 <14.0.0 | v13.x |
 | >=12.0.0 <13.0.0 | v12.x |
 | >=11.0.0 <12.0.0 | v11.x |
@@ -67,7 +68,7 @@ Add `ngxWatermark` to your HTML element:
 ## Options
  Option  | Type | Default | Required | Description |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-| text | string  | `ngx-watermark` | no | Your text for create watermark. Seperate line with `\n` |
+| text | string  | `''` | no | Your text for create watermark. Seperate line with `\n` |
 | width | number  | `300` | no | Set width for watermark. |
 | height | number  | `100` | no | Set height for watermark. |
 | fontFamily | string  | `Arial` | no | Set font-family for text. Can set your custom web fonts. |
