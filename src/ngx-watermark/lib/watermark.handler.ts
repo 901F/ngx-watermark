@@ -10,7 +10,7 @@ export class WatermarkHandler {
 
     readonly DEFAULT_FONT_FAMILY = 'Arial';
     readonly DEFAULT_OPTIONS: NgxWatermarkOptions = {
-        text: 'ngx-watermark',
+        text: '',
         width: 300,
         height: 100,
         fontFamily: this.DEFAULT_FONT_FAMILY,
