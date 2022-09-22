@@ -10,7 +10,7 @@
     "e2e": "ng e2e",
     "build:deploy": "run-s version changelog build:lib build:demo update:readme",
     "build:lib": "ng build ngx-watermark",
-    "build:demo": "ng build demo --prod --base-href=https://madcaz.github.io/ngx-watermark/",
+    "build:demo": "ng build demo --base-href=https://madcaz.github.io/ngx-watermark/",
     "update:readme": "cp -R ./README.md ./dist/ngx-watermark",
     "version": "node scripts/version",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
