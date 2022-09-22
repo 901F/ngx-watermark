@@ -5,7 +5,7 @@
     "peerDependencies": {
         "@angular/common": ">=14.0.0 <15.0.0",
         "@angular/core": ">=14.0.0 <15.0.0",
-        "fontfaceobserver": "^2.1.0"
+        "fontfaceobserver": "^2.3.0"
     },
     "keywords": [
         "angular",
