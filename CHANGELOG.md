@@ -1,3 +1,14 @@
+# [14.0.0](https://github.com/MADCAZ/ngx-watermark/compare/13.0.1...14.0.0) (2022-09-22)
+
+
+### Features
+
+* **core:** change default text to empty string ([5fe570d](https://github.com/MADCAZ/ngx-watermark/commit/5fe570da0687655c6f2405020d145ff44207c046))
+* **core:** support angular 14 ([678c7c4](https://github.com/MADCAZ/ngx-watermark/commit/678c7c4feafadc2bb06d3e2e4b1c46f3465b6c28))
+* **core:** update fontfaceobserver to 2.3.0 ([9ed1e28](https://github.com/MADCAZ/ngx-watermark/commit/9ed1e285b2bd72acb3f8a5f4be5b87e9d15e190c))
+
+
+
 ## [13.0.1](https://github.com/MADCAZ/ngx-watermark/compare/13.0.0...13.0.1) (2021-11-18)
 ### Bugs
 
