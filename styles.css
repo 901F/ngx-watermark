@@ -1,0 +1,22 @@
+/*!*************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].rules[0].oneOf[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[5].rules[0].oneOf[0].use[2]!./src/demo/assets/fonts/fonts.css ***!
+  \*************************************************************************************************************************************************************************************************************************/
+@font-face {
+    font-family: 'Kanit';
+    src: url('Kanit-Light.eot');
+    src: url('Kanit-Light.eot?#iefix') format('embedded-opentype'),
+        url('Kanit-Light.woff2') format('woff2'),
+        url('Kanit-Light.woff') format('woff'),
+        url('Kanit-Light.ttf') format('truetype'),
+        url('Kanit-Light.svg#Kanit-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].rules[0].oneOf[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].rules[0].oneOf[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[6].rules[1].use[0]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].rules[1].use[1]!./src/demo/styles.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/* You can add global styles to this file, and also import other style files */
+
+/*# sourceMappingURL=styles.css.map*/
