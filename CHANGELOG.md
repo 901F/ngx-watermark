@@ -1,3 +1,12 @@
+# [16.0.0](https://github.com/MADCAZ/ngx-watermark/compare/15.0.0...16.0.0) (2023-06-13)
+
+
+### Features
+
+* **core:** support angular 16 ([a433797](https://github.com/MADCAZ/ngx-watermark/commit/a433797a3916345742d2fb5ef3f3c3e8eaadc3b5))
+
+
+
 # [15.0.0](https://github.com/MADCAZ/ngx-watermark/compare/14.0.0...15.0.0) (2022-12-02)
 
 
